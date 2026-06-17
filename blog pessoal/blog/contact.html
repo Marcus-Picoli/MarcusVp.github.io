@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — MVP.dev</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="site-header-placeholder"></div>
+
+  <div class="page-hero">
+    <h1>Contato</h1>
+  </div>
+
+  <main class="single-content">
+
+    <nav class="breadcrumb" aria-label="Caminho">
+      <a href="index.html">Início</a>
+      <span>›</span>
+      <span>Contato</span>
+    </nav>
+
+
+
+    <div class="content-grid" style="margin-top:0;">
+
+      <section>
+        
+        <h2 class="section-title">Envie uma Mensagem</h2>
+
+        <p class="prose" style="margin-bottom:1.5rem;">
+          <span style="color:var(--text-secondary);">
+            Tem uma proposta de projeto, dúvida técnica ou simplesmente quer trocar uma ideia?
+            Preencha o formulário abaixo e responderei o mais breve possível.
+          </span>
+        </p>
+
+        <!-- FORMULÁRIO -->
+        <form id="contact-form" class="contact-form" novalidate>
+
+          <div class="form-group">
+            <label for="field-name">Nome Completo *</label>
+            <input
+              type="text"
+              id="field-name"
+              name="nome"
+              placeholder="Seu nome de guerreiro..."
+              autocomplete="name"
+            >
+            <span class="error-msg" id="err-name">⚠ Por favor, informe seu nome (mínimo 2 caracteres).</span>
+          </div>
+
+          <div class="form-group">
+            <label for="field-email">E-mail *</label>
+            <input
+              type="email"
+              id="field-email"
+              name="email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+            >
+            <span class="error-msg" id="err-email">⚠ Insira um endereço de e-mail válido.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="field-subject">Assunto</label>
+            <input
+              type="text"
+              id="field-subject"
+              name="assunto"
+              placeholder="Sobre o que você quer falar?"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="field-type">Tipo de Contato</label>
+            <select id="field-type" name="tipo">
+              <option value="">Selecione...</option>
+              <option value="projeto">Proposta de Projeto</option>
+              <option value="duvida">Dúvida Técnica</option>
+              <option value="colaboracao">Colaboração</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="field-msg">Mensagem *</label>
+            <textarea
+              id="field-msg"
+              name="mensagem"
+              placeholder="Escreva sua mensagem aqui... (mínimo 10 caracteres)"
+            ></textarea>
+            <span class="error-msg" id="err-msg">⚠ Sua mensagem precisa ter ao menos 10 caracteres.</span>
+          </div>
+
+          <button type="submit" class="btn-submit"><span>
+            ⚔ Enviar Mensagem
+          </button>
+
+        </form>
+
+        <div class="form-success" id="form-success">
+          ᚢᚦᚱ — Mensagem recebida com sucesso! Responderei em breve, guerreiro.
+        </div>
+
+      </section>
+
+      <!-- SIDEBAR INFO -->
+      <aside class="sidebar">
+
+        <div class="widget">
+          <p class="widget-title">ᛟ Outras Formas de Contato</p>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.8;">
+            Prefere redes sociais ou e-mail direto? Também estou por aqui:
+          </p>
+          <ul style="margin-top:0.75rem;">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">E-mail Direto</a></li>
+          </ul>
+        </div>
+
+        <div class="widget">
+          <p class="widget-title">ᚲ Tempo de Resposta</p>
+          <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.8;">
+            Costumo responder em até <strong style="color:var(--gold);">48 horas</strong>.
+            Para projetos urgentes, informe no assunto.
+          </p>
+        </div>
+
+        <div class="neon-quote">
+          <span class="quote-icon">◈</span>
+          "Palavras bem escolhidas abrem portões que espadas não conseguem."
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <div id="site-footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
